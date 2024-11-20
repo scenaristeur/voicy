@@ -7,7 +7,7 @@ def web_cam_capture():
         print("Erreur : La webcam n'est pas correctement ouverte")
         exit()
 
-    path = './data/webcam.png'
+    path = './data/webcam.jpg'
     ret, frame = web_cam.read()
     cv2.imwrite(path, frame)
 
